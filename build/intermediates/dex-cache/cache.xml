@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\zhangzhenzhong\.android\build-cache\f3e1159281c041f563b2a1f1c4c506dc3c879b9e\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="673d77a5bbddd766037f088e775df525c46407f0">
+        <dex dex="D:\github-source\CaptureScreen\app\build\intermediates\pre-dexed\debug\classes_af7d6db32dd00e77aea9b3fc72d79282961a2b85.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\JavaIDE\JavaIDE\android_sdk\extras\android\m2repository\com\android\support\support-annotations\23.2.1\support-annotations-23.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ccb693bc0774fcb637246f7360de25b4af7df318">
+        <dex dex="D:\github-source\CaptureScreen\app\build\intermediates\pre-dexed\debug\support-annotations-23.2.1_7f163501ba865d32058076aba4cf658910f4db08.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\github-source\CaptureScreen\app\lib\isoparser-1.0.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2f52997bcc332159c55231e546ab5b811202f1cf">
+        <dex dex="D:\github-source\CaptureScreen\app\build\intermediates\pre-dexed\debug\isoparser-1.0.5_bc66673b97d723321844c322e814021b6f93f47f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\zhangzhenzhong\.android\build-cache\675e26842e1776db8009fb18dd44eebf8d460a6a\output\jars\libs\internal_impl-23.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="607a3d0b8013b4ccbfeb0b7cb293351994e021fb">
+        <dex dex="D:\github-source\CaptureScreen\app\build\intermediates\pre-dexed\debug\internal_impl-23.2.1_03faf46c39edcc907884560be52511660f80eeb0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\zhangzhenzhong\.android\build-cache\70e9765a5be67a2c63d43fe63cbaa8a4fa5802f3\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e4d0cbb0b999604b349062f0214a0a228a7fd151">
+        <dex dex="D:\github-source\CaptureScreen\app\build\intermediates\pre-dexed\debug\classes_cc7bde11664069f4a96b652b9159b796bb885df2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\github-source\CaptureScreen\app\lib\aspectjrt.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a55e04ff1889efcf17061da55008018a1ecb1db0">
+        <dex dex="D:\github-source\CaptureScreen\app\build\intermediates\pre-dexed\debug\aspectjrt_8685aa82c2e15a41edfe0d51ebf87003fcc24ed8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\zhangzhenzhong\.android\build-cache\1392d3dc889de310614cc891746139b72d79a3fc\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3469cb457f10f74c28cbc05f069b6c894f6cbdd0">
+        <dex dex="D:\github-source\CaptureScreen\app\build\intermediates\pre-dexed\debug\classes_5e6819a8a9e4bed0cb5860b18ac0b377fdbe75d4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\zhangzhenzhong\.android\build-cache\675e26842e1776db8009fb18dd44eebf8d460a6a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3be474b1b21b31cf2fa93fe6bd641ae108d96452">
+        <dex dex="D:\github-source\CaptureScreen\app\build\intermediates\pre-dexed\debug\classes_6ca09c4bd6a4afcfe3d49012c0795f8b34ff10fe.jar" />
+    </item>
+
+</items>
