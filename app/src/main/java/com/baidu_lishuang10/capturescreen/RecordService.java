@@ -14,6 +14,7 @@ import android.media.MediaRecorder;
 import android.media.projection.MediaProjection;
 import android.media.projection.MediaProjectionManager;
 import android.os.Environment;
+import android.os.Handler;
 import android.os.IBinder;
 import android.support.annotation.Nullable;
 import android.util.DisplayMetrics;
@@ -91,10 +92,10 @@ public class RecordService extends Service {
 
     private void configureMedia() {
         MediaFormat mediaFormat = MediaFormat.createVideoFormat("video/avc", windowWidth, windowHeight);
-        mediaFormat.setInteger(MediaFormat.KEY_BIT_RATE, 6000000);
-        mediaFormat.setInteger(MediaFormat.KEY_FRAME_RATE, 30);
+        mediaFormat.setInteger(MediaFormat.KEY_BIT_RATE, 15000000);
+        mediaFormat.setInteger(MediaFormat.KEY_FRAME_RATE, 60);
         mediaFormat.setInteger(MediaFormat.KEY_COLOR_FORMAT, MediaCodecInfo.CodecCapabilities.COLOR_FormatSurface);
-        mediaFormat.setInteger(MediaFormat.KEY_I_FRAME_INTERVAL, 2);
+        mediaFormat.setInteger(MediaFormat.KEY_I_FRAME_INTERVAL, 20);
         try {
             mMediaCodec = MediaCodec.createEncoderByType("video/avc");
         } catch (IOException e) {
@@ -103,6 +104,14 @@ public class RecordService extends Service {
         mMediaCodec.configure(mediaFormat, null, null, MediaCodec.CONFIGURE_FLAG_ENCODE);
         mSurface = mMediaCodec.createInputSurface();
         mMediaCodec.start();
+
+        Class<?> activity=null;
+        if (true){
+            activity=MainActivity.class;
+        }else{
+            activity=AudioWithVideoActivity.class;
+        }
+        startActivity(new Intent(this,activity));
     }
 
     private void createEnvironment() {
@@ -393,7 +402,8 @@ public class RecordService extends Service {
             fos = new FileOutputStream(new File(mergePath));
             out.writeContainer(fos.getChannel());
             fos.close();
-            Toast.makeText(this,"",Toast.LENGTH_LONG).show();
+
+//            Toast.makeText(RecordService.this.getApplicationContext(),"合成成功路径"+mergePath,Toast.LENGTH_LONG).show();
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
